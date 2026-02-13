@@ -4,14 +4,16 @@ database:
   url: "sqlite:///radar.db"
 
 seeds:
-  - "shopify product scraper"
-  - "amazon dropshipping tool"
-  - "competitor price tracker"
-  - "instagram email extractor"
-  - "linkedin lead generator"
-  - "google maps scraper"
-  - "seo audit tool"
-  - "facebook ad library downloader"
+  - "google docs ai writer"
+  - "linkedin recruiter chrome extension"
+  - "real estate scraper chrome"
+  - "upwork automated bid"
+  - "twitter ghostwriter extension"
+  - "amazon seller analytics extension"
+  - "google sheets automation tool"
+  - "youtube seo chrome extension"
+  - "email outreach chrome extension"
+  - "recruiter sourcing tool"
 
 crawler:
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"

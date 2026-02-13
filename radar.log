@@ -1530,3 +1530,834 @@
 2026-02-13 14:08:23.093 | INFO     | src.radar.reporting.generator:generate:103 - JSON report saved to reports/report.json
 2026-02-13 14:08:23.101 | INFO     | src.radar.reporting.generator:generate:120 - HTML report saved to reports/report.html
 2026-02-13 14:08:23.101 | INFO     | __main__:report:214 - Reporting complete.
+2026-02-13 17:41:04.248 | INFO     | __main__:crawl:39 - Processing seed: google docs ai writer
+2026-02-13 17:41:04.248 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=google+docs+ai+writer
+2026-02-13 17:41:04.530 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 8 suggestions for 'google docs ai writer'
+2026-02-13 17:41:05.530 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20docs%20ai%20writer
+2026-02-13 17:41:05.976 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google docs ai writer'
+2026-02-13 17:41:06.922 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20docs%20ai%20writer%20free
+2026-02-13 17:41:07.339 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google docs ai writer free'
+2026-02-13 17:41:08.289 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20ai%20document%20writer
+2026-02-13 17:41:08.679 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google ai document writer'
+2026-02-13 17:41:09.627 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20document%20ai%20example
+2026-02-13 17:41:10.028 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google document ai example'
+2026-02-13 17:41:10.980 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20document%20ai%20cost
+2026-02-13 17:41:11.394 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 9 candidates in Chrome Store for 'google document ai cost'
+2026-02-13 17:41:12.349 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/how%20to%20use%20google%20docs%20for%20writing
+2026-02-13 17:41:13.098 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'how to use google docs for writing'
+2026-02-13 17:41:14.049 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/do%20writers%20use%20google%20docs
+2026-02-13 17:41:14.601 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'do writers use google docs'
+2026-02-13 17:41:15.528 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/is%20google%20docs%20safe%20for%20writing
+2026-02-13 17:41:15.889 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'is google docs safe for writing'
+2026-02-13 17:41:15.905 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/search/google%20docs%20ai%20writer
+2026-02-13 17:41:15.929 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google docs ai writer'
+2026-02-13 17:41:15.934 | INFO     | __main__:crawl:39 - Processing seed: linkedin recruiter chrome extension
+2026-02-13 17:41:16.863 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=linkedin+recruiter+chrome+extension
+2026-02-13 17:41:17.135 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 4 suggestions for 'linkedin recruiter chrome extension'
+2026-02-13 17:41:18.136 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/linkedin%20recruiter%20chrome%20extension
+2026-02-13 17:41:18.679 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'linkedin recruiter chrome extension'
+2026-02-13 17:41:19.645 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/linkedin%20recruiter%20recommendation%20examples
+2026-02-13 17:41:19.975 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 0 candidates in Chrome Store for 'linkedin recruiter recommendation examples'
+2026-02-13 17:41:20.946 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/linkedin%20recruiter%20contact
+2026-02-13 17:41:21.322 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'linkedin recruiter contact'
+2026-02-13 17:41:22.278 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/linkedin%20recruiter%20contact%20number
+2026-02-13 17:41:22.801 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'linkedin recruiter contact number'
+2026-02-13 17:41:22.826 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/search/linkedin%20recruiter%20chrome%20extension
+2026-02-13 17:41:22.849 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'linkedin recruiter chrome extension'
+2026-02-13 17:41:22.853 | INFO     | __main__:crawl:39 - Processing seed: real estate scraper chrome
+2026-02-13 17:41:23.756 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=real+estate+scraper+chrome
+2026-02-13 17:41:24.212 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 1 suggestions for 'real estate scraper chrome'
+2026-02-13 17:41:25.212 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/z%20real%20estate%20scraper%20chrome%20extension
+2026-02-13 17:41:25.576 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 3 candidates in Chrome Store for 'z real estate scraper chrome extension'
+2026-02-13 17:41:26.539 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/real%20estate%20scraper%20chrome
+2026-02-13 17:41:26.919 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'real estate scraper chrome'
+2026-02-13 17:41:26.977 | INFO     | __main__:crawl:39 - Processing seed: upwork automated bid
+2026-02-13 17:41:27.874 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=upwork+automated+bid
+2026-02-13 17:41:28.067 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 3 suggestions for 'upwork automated bid'
+2026-02-13 17:41:29.068 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/upwork%20automated%20bidding
+2026-02-13 17:41:29.549 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 4 candidates in Chrome Store for 'upwork automated bidding'
+2026-02-13 17:41:30.515 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/how%20to%20bid%20successfully%20on%20upwork
+2026-02-13 17:41:30.839 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 2 candidates in Chrome Store for 'how to bid successfully on upwork'
+2026-02-13 17:41:31.808 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/what%20is%20bidding%20in%20upwork
+2026-02-13 17:41:32.184 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 9 candidates in Chrome Store for 'what is bidding in upwork'
+2026-02-13 17:41:33.141 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/upwork%20automated%20bid
+2026-02-13 17:41:34.832 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 4 candidates in Chrome Store for 'upwork automated bid'
+2026-02-13 17:41:34.834 | INFO     | __main__:crawl:39 - Processing seed: twitter ghostwriter extension
+2026-02-13 17:41:35.793 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=twitter+ghostwriter+extension
+2026-02-13 17:41:36.010 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 0 suggestions for 'twitter ghostwriter extension'
+2026-02-13 17:41:37.010 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/twitter%20ghostwriter%20extension
+2026-02-13 17:41:37.334 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 0 candidates in Chrome Store for 'twitter ghostwriter extension'
+2026-02-13 17:41:37.334 | INFO     | __main__:crawl:39 - Processing seed: amazon seller analytics extension
+2026-02-13 17:41:38.305 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=amazon+seller+analytics+extension
+2026-02-13 17:41:38.502 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 1 suggestions for 'amazon seller analytics extension'
+2026-02-13 17:41:39.503 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/amazon%20product%20analysis%20extension
+2026-02-13 17:41:39.935 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'amazon product analysis extension'
+2026-02-13 17:41:40.887 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/amazon%20seller%20analytics%20extension
+2026-02-13 17:41:41.426 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'amazon seller analytics extension'
+2026-02-13 17:41:41.453 | INFO     | __main__:crawl:39 - Processing seed: google sheets automation tool
+2026-02-13 17:41:42.400 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=google+sheets+automation+tool
+2026-02-13 17:41:42.578 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 7 suggestions for 'google sheets automation tool'
+2026-02-13 17:41:43.578 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20sheets%20automation%20tools
+2026-02-13 17:41:44.153 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google sheets automation tools'
+2026-02-13 17:41:45.116 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/form%20to%20google%20sheets%20automation%20tool
+2026-02-13 17:41:45.512 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'form to google sheets automation tool'
+2026-02-13 17:41:46.458 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/how%20to%20automate%20google%20sheets
+2026-02-13 17:41:46.877 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'how to automate google sheets'
+2026-02-13 17:41:47.831 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/can%20google%20sheets%20use%20vba
+2026-02-13 17:41:48.174 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 1 candidates in Chrome Store for 'can google sheets use vba'
+2026-02-13 17:41:49.140 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/how%20to%20use%20google%20script%20in%20sheets
+2026-02-13 17:41:49.544 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'how to use google script in sheets'
+2026-02-13 17:41:50.496 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/can%20you%20convert%20google%20sheets%20to%20excel
+2026-02-13 17:41:50.908 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'can you convert google sheets to excel'
+2026-02-13 17:41:51.860 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/how%20to%20use%20google%20sheets%20to%20make%20a%20spreadsheet
+2026-02-13 17:41:52.318 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'how to use google sheets to make a spreadsheet'
+2026-02-13 17:41:53.267 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/google%20sheets%20automation%20tool
+2026-02-13 17:41:53.657 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'google sheets automation tool'
+2026-02-13 17:41:53.661 | INFO     | __main__:crawl:39 - Processing seed: youtube seo chrome extension
+2026-02-13 17:41:54.614 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=youtube+seo+chrome+extension
+2026-02-13 17:41:54.841 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 8 suggestions for 'youtube seo chrome extension'
+2026-02-13 17:41:55.841 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20chrome%20extension
+2026-02-13 17:41:56.473 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'youtube seo chrome extension'
+2026-02-13 17:41:57.429 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20tool%20chrome%20extension
+2026-02-13 17:41:57.877 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'youtube seo tool chrome extension'
+2026-02-13 17:41:58.830 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20video%20seo%20extension%20chrome
+2026-02-13 17:41:59.295 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'youtube video seo extension chrome'
+2026-02-13 17:42:00.209 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20best%20practices
+2026-02-13 17:42:00.557 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 5 candidates in Chrome Store for 'youtube seo best practices'
+2026-02-13 17:42:01.517 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20settings
+2026-02-13 17:42:02.094 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 9 candidates in Chrome Store for 'youtube seo settings'
+2026-02-13 17:42:03.056 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20jobs
+2026-02-13 17:42:03.397 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 0 candidates in Chrome Store for 'youtube seo jobs'
+2026-02-13 17:42:04.370 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20ranking
+2026-02-13 17:42:04.757 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'youtube seo ranking'
+2026-02-13 17:42:05.710 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/youtube%20seo%20score
+2026-02-13 17:42:06.102 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'youtube seo score'
+2026-02-13 17:42:06.119 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/search/youtube%20seo%20chrome%20extension
+2026-02-13 17:42:06.141 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'youtube seo chrome extension'
+2026-02-13 17:42:06.145 | INFO     | __main__:crawl:39 - Processing seed: email outreach chrome extension
+2026-02-13 17:42:07.069 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=email+outreach+chrome+extension
+2026-02-13 17:42:07.277 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 3 suggestions for 'email outreach chrome extension'
+2026-02-13 17:42:08.278 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/email%20template%20chrome%20extension
+2026-02-13 17:42:08.897 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'email template chrome extension'
+2026-02-13 17:42:09.848 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/email%20outreach%20examples
+2026-02-13 17:42:10.372 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'email outreach examples'
+2026-02-13 17:42:11.326 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/how%20to%20write%20an%20outreach%20email
+2026-02-13 17:42:11.702 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'how to write an outreach email'
+2026-02-13 17:42:12.658 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/email%20outreach%20chrome%20extension
+2026-02-13 17:42:13.195 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'email outreach chrome extension'
+2026-02-13 17:42:13.235 | INFO     | __main__:crawl:39 - Processing seed: recruiter sourcing tool
+2026-02-13 17:42:14.148 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: http://suggestqueries.google.com/complete/search?output=toolbar&hl=en&q=recruiter+sourcing+tool
+2026-02-13 17:42:14.349 | INFO     | src.radar.connectors.google_suggest:get_suggestions:22 - Found 10 suggestions for 'recruiter sourcing tool'
+2026-02-13 17:42:15.350 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/recruiter%20sourcing%20tools
+2026-02-13 17:42:15.716 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 6 candidates in Chrome Store for 'recruiter sourcing tools'
+2026-02-13 17:42:16.682 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/candidate%20sourcing%20tools
+2026-02-13 17:42:17.074 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'candidate sourcing tools'
+2026-02-13 17:42:18.032 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/talent%20sourcing%20tools
+2026-02-13 17:42:18.402 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'talent sourcing tools'
+2026-02-13 17:42:19.351 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/candidate%20sourcing%20tools%20free
+2026-02-13 17:42:19.891 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'candidate sourcing tools free'
+2026-02-13 17:42:20.844 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/best%20recruiter%20sourcing%20tools
+2026-02-13 17:42:21.212 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 1 candidates in Chrome Store for 'best recruiter sourcing tools'
+2026-02-13 17:42:22.179 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/ai%20recruiting%20sourcing%20tools
+2026-02-13 17:42:22.479 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 1 candidates in Chrome Store for 'ai recruiting sourcing tools'
+2026-02-13 17:42:23.458 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/top%20recruiting%20sourcing%20tools
+2026-02-13 17:42:23.983 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 3 candidates in Chrome Store for 'top recruiting sourcing tools'
+2026-02-13 17:42:24.947 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/free%20recruiting%20sourcing%20tools
+2026-02-13 17:42:25.555 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 4 candidates in Chrome Store for 'free recruiting sourcing tools'
+2026-02-13 17:42:26.524 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/what%20is%20a%20sourcing%20recruiter
+2026-02-13 17:42:26.901 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'what is a sourcing recruiter'
+2026-02-13 17:42:27.858 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/sourcing%20ideas%20for%20recruiters
+2026-02-13 17:42:28.167 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 0 candidates in Chrome Store for 'sourcing ideas for recruiters'
+2026-02-13 17:42:29.140 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/search/recruiter%20sourcing%20tool
+2026-02-13 17:42:29.628 | INFO     | src.radar.connectors.chrome_store:search:53 - Found 10 candidates in Chrome Store for 'recruiter sourcing tool'
+2026-02-13 17:42:29.655 | INFO     | __main__:crawl:62 - Crawl complete.
+2026-02-13 17:42:30.517 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.517 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/shopify-scraper/idjimkpnmipnenkoifdomonlcejhhjnn
+2026-02-13 17:42:30.576 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.576 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/free-shopify-product-scra/cpgnbnkicmfhkglagioeamammaefejeg
+2026-02-13 17:42:30.613 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.614 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/shopify-shark-product-scr/aingngcmeghkkpbapgdhbidmemoiaahb
+2026-02-13 17:42:30.651 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.651 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/shopify-scraper-parser-sh/injdgfhiepghpnihhgmkejcjnoohaibm
+2026-02-13 17:42:30.702 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.702 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/shopify-product-scraper-s/ephoekniabklgfanmiommibapgbingmj
+2026-02-13 17:42:30.736 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.736 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/shopify-scraper-shopify-s/pehfmekejnhfofdjabaalbnanmpgjcdn
+2026-02-13 17:42:30.770 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.770 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/e-commerce-product-resear/pclmdnhhaodipimblfebcoflbnolgkci
+2026-02-13 17:42:30.807 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.807 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/amazon-seller-address-scr/mncmifeggjjngfjebjdpgghiklpeeobf
+2026-02-13 17:42:30.870 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.870 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/sawd-ebay-scraper/agcneiabnganclkfigniikgmhhahdkfo
+2026-02-13 17:42:30.924 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.924 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/amazon-review-extractor/ekmlpjpmebgigphdgoogdgngmphffpmb
+2026-02-13 17:42:30.961 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:30.962 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/downpictures-image-video/ahfkdgecdjhhgpckemoffpgkgfaadpcj
+2026-02-13 17:42:31.005 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.005 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/amazon-online-arbitrage-w/edkgpjhfpfpgkohafpaliolcfnijnibh
+2026-02-13 17:42:31.055 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.055 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/saturation-scout/mhhnhmglejcmjmgmbhfngnijkkeflmek
+2026-02-13 17:42:31.108 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.108 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/autods-dropshipping-helpe/inblpolgchbcgmocpnalobjmmaldkjap
+2026-02-13 17:42:31.157 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.157 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/dropcopy/jacbjcahibjdckjiecndegnphmjjjimf
+2026-02-13 17:42:31.206 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.206 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/sharkdropship-for-temu-al/ajbncoijgeclkangiahiphilnolbdmmh
+2026-02-13 17:42:31.242 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.242 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/amazon-hot-items-finder-a/nnaigeljgbndmbbgblfooljplddofljg
+2026-02-13 17:42:31.288 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.288 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/amazon-asin-copy/aohfjaadlbiifnnajpobdhokecjokhab
+2026-02-13 17:42:31.335 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.335 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/priceedge-track-your-comp/jdcjpmlgbjkbaphmkhfmpoadebkabfde
+2026-02-13 17:42:31.383 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.383 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/aliprice-shopping-assista/nhfmioilpglanakdpomfobcmbkbjedha
+2026-02-13 17:42:31.435 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.435 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/priceotus-variants-import/holkjknaaabpnefcfejoimcdcdnphhnj
+2026-02-13 17:42:31.481 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.482 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/miruka/lgjjgdaceekchlbdbblnblgeoehdebjm
+2026-02-13 17:42:31.516 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.516 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/thunderbit-ai-web-scraper/hbkblmodhbmcakopmmfbaopfckopccgp
+2026-02-13 17:42:31.575 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.576 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ehunt-etsy-rank-tool/pmpgnefoilpinnblccjddomajohmbpko
+2026-02-13 17:42:31.628 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.628 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/flipkart-seller-keyword-l/fpcdkjdaepkpmbjdigeimabjokgijcfb
+2026-02-13 17:42:31.663 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.664 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/waltrack-walmart-price-tr/hhafpmbhnjfnlmlmafmbmnpfliohjkkl
+2026-02-13 17:42:31.756 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.757 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/obsrvapp/ikinfdfmbohcloindocimnannmkoaaam
+2026-02-13 17:42:31.802 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.802 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/tool4seller-amazon-produc/ocjlckkmllgdmmpiobopeblldmmhjpjk
+2026-02-13 17:42:31.851 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.851 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/sellify-amazon-walmart-se/aaanccbgcapmhkemhjlkmladllalcmie
+2026-02-13 17:42:31.888 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.888 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/email-scraper-for-ins/icceojeancmncflpknhmfbfaleindgmi
+2026-02-13 17:42:31.937 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.937 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/growman-ig-email-extracto/hndnabgpcmhdmaejoapophbidipmgnpb
+2026-02-13 17:42:31.984 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:31.984 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/socialdeck-ig-email-extra/lpcfhggocdlchakbpodhamiohpgebpop
+2026-02-13 17:42:32.033 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.033 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ig-follower-export-tool-i/acibfjbekmadebcjeimaedenabojnnil
+2026-02-13 17:42:32.082 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.082 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/emailfox-ig-email-extract/jgafbkcghojdjdlihcdjemmhiokihcjk
+2026-02-13 17:42:32.130 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.130 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ig-email-extractor-email/pmkfjfdjejeidpfiglaphmamcaffdemf
+2026-02-13 17:42:32.192 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.192 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/leadlink-ai-linkedin-lead/ifndaefopfcmmmhabpijffglfoodlpnk
+2026-02-13 17:42:32.236 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.237 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ai-linkedin-lead-generato/jckhmbboedhaamfbdbokfomedoeflhab
+2026-02-13 17:42:32.272 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.272 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/linkedradar-email-finder/kgpckhbdfdhbkfkepcoebpabkmnbhoke
+2026-02-13 17:42:32.334 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.334 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/commentron-%E2%80%94-ai-booster-f/hdappgahcgpifoabanfifjicfllpokgo
+2026-02-13 17:42:32.386 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.386 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/apollo-scraper-apollo-lea/ndcehhfhbobpfbnkigpomgbaomabgcoa
+2026-02-13 17:42:32.425 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.425 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/salesmind-ai-automation-t/jbbanajdakjmholbhekdkcfekhibilhg
+2026-02-13 17:42:32.474 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.474 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/octopus-all-in-one-linked/afahlliooeebnifondmbhcaghcapepbm
+2026-02-13 17:42:32.509 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.509 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/linkedin-sales-navigator/fifeghgfdchhlkpphbggibohpnlnbkcb
+2026-02-13 17:42:32.600 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.600 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/waalaxy-linkedin-automati/hlkiignknimkfafapmgpbnbnmkajgljh
+2026-02-13 17:42:32.653 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.653 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/linkoff-filter-and-custom/maanaljajdhhnllllmhmiiboodmoffon
+2026-02-13 17:42:32.702 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.703 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/linkedin-custom-feeds-key/ifapldipchmgojgbplomabaafmagbopn
+2026-02-13 17:42:32.750 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.750 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/superlioai/bmaobmmbobbmddkdjilonehnhopdgbkj
+2026-02-13 17:42:32.799 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.799 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/linkedin-sales-navigator/dfblonmbgoohadjjhcoeemcailijfigm
+2026-02-13 17:42:32.847 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.847 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/bardeen-automate-browser/ihhkmalpkhkoedlmcnilbbhhbhnicjga
+2026-02-13 17:42:32.900 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.900 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/linkomatic/ijkepcfiknplifhkobhjnedokefkjofj
+2026-02-13 17:42:32.948 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:32.949 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/reepl-ai-linkedin-post-wr/dkfmadebibibgfogainfmieipbgffomp
+2026-02-13 17:42:33.005 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.005 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/lead-connect-linkedin-out/jdcjfphdohecknoaelnngakpignnedfb
+2026-02-13 17:42:33.042 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.042 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/maps-scraper-map-data-ext/ofbhiclojhjkggpnapcnjjjdjlgcikdf
+2026-02-13 17:42:33.094 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.095 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/maps-scraper-leads-extrac/ghokiciomljbacchbkfhmnlmflbponlf
+2026-02-13 17:42:33.148 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.148 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/maps-scraper-by-presto/oilholdcmnjkebdhokhaamalceecjbip
+2026-02-13 17:42:33.202 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.202 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah
+2026-02-13 17:42:33.254 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.254 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/maps-extractor-by-leads-e/gaojpolkokdnlbdnejallmpmcigpnhan
+2026-02-13 17:42:33.295 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.295 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/link-grabber/caodelkhipncidmoebgbbeemedohcdma
+2026-02-13 17:42:33.341 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.341 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/simplescraper-%E2%80%94-a-fast-an/lnddbhdmiciimpkbilgpklcglkdegdkg
+2026-02-13 17:42:33.443 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.443 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/maps-scraper-leads-data-e/dahoicbehnalbeamhcpghhoelifghbma
+2026-02-13 17:42:33.483 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.483 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/seo-checker-tool-get-free/ljkhgacfcnhpfafpcdpaadgklajibdak
+2026-02-13 17:42:33.535 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.535 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/quick-click-website-audit/ibclohpehkoagiennackaiplhhkolfnm
+2026-02-13 17:42:33.583 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.583 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/gmb-audit-local-seo-tool/iogidfihemjcepgbcaccmickojidjhlf
+2026-02-13 17:42:33.635 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.635 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/free-seo-audit-tool/fkpanhjplldgpnfckakelodecbnbjckk
+2026-02-13 17:42:33.669 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.669 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/gmb-everywhere-gbp-audit/oibcaeeplepnjfjhokfcabnaafodppik
+2026-02-13 17:42:33.720 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.721 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/seo-auditor/pclikachjdgaabokjaffogihmhcllhek
+2026-02-13 17:42:33.756 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.756 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/seoquake/akdgnmcogleenhbclghghlkkdndkjdjc
+2026-02-13 17:42:33.806 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.806 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/seo-analysis-website-revi/hlngmmdolgbdnnimbmblfhhndibdipaf
+2026-02-13 17:42:33.841 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.841 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/programmatic-seo-template/pfiinnbgblbnloopjdfdpjaacanjpojo
+2026-02-13 17:42:33.876 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.876 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/website-ranking-and-seo-c/npapojppkmfhefbokolngnomlgkkpcnc
+2026-02-13 17:42:33.928 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.928 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ad-library-downloader/gojmmkhaiojimnnjhhilmhjmhdbdagod
+2026-02-13 17:42:33.980 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:33.980 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/adlibnote-ad-library-down/niepmhdjjdggogblnljbdflekfohknmc
+2026-02-13 17:42:34.042 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:34.042 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/facebook-ad-library-downl/gmfpomcdajdegkfkbopipdcjnpcmbefh
+2026-02-13 17:42:34.078 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:34.078 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/facebook-ad-library-insig/bmmbmlcnghehdpemfobefkmnahgdadbo
+2026-02-13 17:42:34.129 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:34.129 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ad-library-cloud/mmehdbhpbgoegockemckbpjeoflflobc
+2026-02-13 17:42:34.176 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:34.176 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/contentbot-ai-writer/ehliocfmgnkdcgigclppnodpgkiodfco
+2026-02-13 17:42:34.797 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:34.797 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/voila-%E2%80%93-ai-assistant-copi/cakobppopkpmmglabcdcklncbckjpkcl
+2026-02-13 17:42:34.850 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:35.743 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-chrome-extension-power/fedmdabgnkfghjplejeilojikdaopkpm
+2026-02-13 17:42:36.451 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:37.375 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/merlin-ask-ai-to-research/camppjleccjaphfdbohjdohecfnoikec
+2026-02-13 17:42:37.786 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:38.706 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sider-chat-with-all-ai-gp/difoiogjjojoaoomphldepapgpbgkhkb
+2026-02-13 17:42:39.368 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:40.286 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/toneclone-ai-writer-in-yo/kcfldodgicipgcjbocfknpaloplfhmda
+2026-02-13 17:42:40.700 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:41.637 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/free-ai-essay-generator-a/lnpeflilbcimmlbenlpphfbpmocmjpgk
+2026-02-13 17:42:42.047 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:42.969 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-detector-and-human-wri/kdngfaamkbbkdbemejnlkmjfpmndjdmb
+2026-02-13 17:42:43.426 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:44.350 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-meet-transcripts-a/cjakihmakleeghohchkmkalfoikdnadc
+2026-02-13 17:42:44.929 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:45.854 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-writing-assistant/efmdldmmhkakilebgiecmcafhojapill
+2026-02-13 17:42:46.790 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:47.726 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ghost-writer-free/dkafampgighkehgckgbodlidipmjmppf
+2026-02-13 17:42:48.270 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:49.215 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-chatbot/npphdmcakmfhllhblkealgkeefamebih
+2026-02-13 17:42:49.848 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:50.779 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/shakespeare-ai-toolbar-ai/olikhkphnfenjcgliidepgflkfdmondi
+2026-02-13 17:42:51.156 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:52.085 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/gptzero-ai-detection-writ/kgobeoibakoahbfnlficpmibdbkdchap
+2026-02-13 17:42:52.582 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:53.518 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/deepl-translate-and-write/cofdbpoegempjloogbagkncekinflcnj
+2026-02-13 17:42:53.946 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:53.946 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/quillbot-ai-writing-and-g/iidnbdjijdkbmajdffnidomddglmieko
+2026-02-13 17:42:54.000 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:54.827 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-letter-generator/hgnjolbjpjmhepcbjgeeallnamkjnfgi
+2026-02-13 17:42:55.526 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:56.457 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/dueyai-humanizer-auto-typ/ilamopeagajnekeaogejpdmffneankjf
+2026-02-13 17:42:57.204 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:58.123 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/undetectable-ai-human-aut/jldjlnajbbkbmebhgfpcgghpbfpfakni
+2026-02-13 17:42:58.501 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:42:59.428 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-google-form-builder/kjglafdhoohlhlicoklkgjffiedneeem
+2026-02-13 17:42:59.791 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:00.725 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/scribe-ai-documentation-s/okfkdaglfjjjfefdcppliegebpoegaii
+2026-02-13 17:43:01.109 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:02.032 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/formgoatai-%E2%80%93-ai-autofill/bfppichejcckhekcedhhlnjeahlnbkao
+2026-02-13 17:43:02.359 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:03.308 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/briefly-ai-meeting-summar/bjmgcelbpkgmofiogkmleblcmecflldk
+2026-02-13 17:43:03.712 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:04.644 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/formix-ai/hhpgihahikeplfhhclckonipbdbdcgmo
+2026-02-13 17:43:05.694 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:06.625 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/snapgrade-ai-visual-docum/kmefklainnkibhgnbmhngcoakihialni
+2026-02-13 17:43:07.213 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:08.154 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/docfiller/goibiampjlgcdjdfakjepniopldpijcd
+2026-02-13 17:43:08.544 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:09.477 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/taxbuzz-ai/opikndfepbbekgnhehdaaomhbiejgpkj
+2026-02-13 17:43:10.346 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:11.269 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/thought-bot-ai/molhiolkbndfjeokachagfmklnpoelag
+2026-02-13 17:43:11.629 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:12.563 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/doc2prompt-pdf-to-chatgpt/ncehnommghjgggpiiofhdkgdpnodebng
+2026-02-13 17:43:13.182 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:14.127 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-contract-generator/kpccglocffnkkdfhppdikelpoblabijn
+2026-02-13 17:43:14.513 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:15.451 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-lawyer/hbnhlfogmljpempeohaclgkngdcghomn
+2026-02-13 17:43:16.010 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:16.951 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/image-to-form-auto-filler/kkbeionamblgeamgjejcohakkpcmklgi
+2026-02-13 17:43:17.325 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:18.254 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/opentranscribe/longmnbeigmjpnghnkihdkeljbodlbef
+2026-02-13 17:43:18.959 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:19.844 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/policy-threat-analyzer/enbhocgffaeppnikpcmkojaifhigknhi
+2026-02-13 17:43:20.402 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:21.343 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/apex-learning-hack-assist/deepanfkojflalfajnkcnlhiejeomdgk
+2026-02-13 17:43:21.724 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:22.650 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/joblic/hcaaakegebekicmbkffmpmimibcboehh
+2026-02-13 17:43:23.549 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:24.478 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-docs-quick-write/cmieehnbepanbodfemngddghfbdijebf
+2026-02-13 17:43:24.843 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:25.779 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/readwrite-for-google-chro/inoeonmfapjbbkmdafoankkfajkcphgd
+2026-02-13 17:43:26.364 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:27.290 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/revision-history-writing/dlepebghjlnddgihakmnpoiifjjpmomh
+2026-02-13 17:43:28.019 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:28.949 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/draftback/nnajoiemfpldioamchanognpjmocgkbg
+2026-02-13 17:43:29.363 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:30.283 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/dark-mode-google-docs/iabnclnclchijjckhdljmocghgmgnnii
+2026-02-13 17:43:30.683 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:31.607 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/process-feedback-for-goog/chcbikmmlhbbdkfiaaaljabpefdfajnb
+2026-02-13 17:43:32.091 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:33.025 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-docs-new/onjjpeonkbenaglclaageiidffmfemco
+2026-02-13 17:43:33.410 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:34.336 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/auto-write/bpingmbcimfnmggbbbjpoajmgpjkeikj
+2026-02-13 17:43:34.931 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:35.877 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/writehuman-history-replay/bfaogmhmapcefhmkdablidkcgkgnhghl
+2026-02-13 17:43:37.192 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:38.120 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-docs-splitview/mhekpeihiapfhjefakclpbmdofbmldcb
+2026-02-13 17:43:38.516 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:38.516 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/grammarly-ai-writing-assi/kbfnbcaeplbcioakkpcpgfkobkghlhen
+2026-02-13 17:43:38.567 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:39.439 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/prowritingaid-grammar-che/npnbdojkgkbcdfdjlfdmplppdphlhhcf
+2026-02-13 17:43:39.846 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:40.776 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/writer-extension-clipper/ikfjgjdcechliibmcjnaoabbfjabbaoc
+2026-02-13 17:43:41.443 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:42.326 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/distraction-free-mode-%E2%80%94-g/blmejkgbnceohgjfnoiegdlbfkmpkeha
+2026-02-13 17:43:42.968 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:42.968 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/writing-assistant/icfibfjidabjcklhikmodelmopjmghgj
+2026-02-13 17:43:43.031 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:43.032 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/hyperwrite-ai-writing-ass/kljjoeapehcmaphfcjkmbhkinoaopdnd
+2026-02-13 17:43:43.087 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:43.892 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/jetbrains-grazie-writing/fonaoompfjljjllgccccgjnhnoghohgc
+2026-02-13 17:43:44.297 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:45.220 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/monica-all-in-one-ai-assi/ofpnmcalabcbjgholdjcjblkibolbppb
+2026-02-13 17:43:45.814 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:46.737 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-finder-getprospect/bhbcbkonalnjkflmdkdodieehnmmeknp
+2026-02-13 17:43:47.333 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:48.258 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/x0pa-recruiter-extension/aeeccphegbhmemmjncggcjlieanbkcmg
+2026-02-13 17:43:48.631 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:49.563 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/crm-integration-with-link/fpieanbcbflkkhljicblgbmndgblndgh
+2026-02-13 17:43:50.070 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:51.014 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/elitehunter-linkedin-auto/jkmfjdkjgpoeedfonffkjhfimpdpaade
+2026-02-13 17:43:52.685 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:53.610 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/outreachai/dflaihboigogikfpkgkoniicfoojcfbc
+2026-02-13 17:43:54.271 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:55.210 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/mogul-recruiter/peimgkadcinffebndofhpegopgdfgjda
+2026-02-13 17:43:55.925 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:56.848 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/resume-exporter-for-recru/pgmifkhefggmdhompkbibndokddhkimh
+2026-02-13 17:43:57.349 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:58.282 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/careerflow-ai-job-applica/iadokddofjgcgjpjlfhngclhpmaelnli
+2026-02-13 17:43:58.892 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:43:59.821 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/jobreferai-linkedin-job-o/mmknngpolenffhdaocoeeigkfhinbgnh
+2026-02-13 17:44:00.193 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:01.126 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/instresume-linkedin-revie/dbmgnjicbikhdlcaachlgpfgijlmdogh
+2026-02-13 17:44:01.521 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:02.463 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/incontact-contact-book-fo/bhhdblckjkgijhjajngmjdijpmhoeobp
+2026-02-13 17:44:03.045 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:03.924 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-finder-by-contactou/jjdemeiffadmmjhkbbpglgnlgeafomjo
+2026-02-13 17:44:04.515 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:05.450 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/pitchmeai-job-recruiter-e/gpaoonmjikbnoedbnnmihhichnjlojji
+2026-02-13 17:44:06.016 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:06.947 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/capture-by-tracker/mlpgaajadjjmemccfnecpjmfflecjjad
+2026-02-13 17:44:07.603 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:08.532 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/recruiter-accelerator/dcnpnkllnajifmpiggleoomlapoiinjf
+2026-02-13 17:44:08.913 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:09.843 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/lead-management-crm/nfaddeeedeljipeikkinhddkonoebfgp
+2026-02-13 17:44:10.429 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:11.377 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/salesql-b2b-email-finder/lbdglhhdbgnknbdifhanfholehojlkgg
+2026-02-13 17:44:11.763 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:12.699 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/qodeworld-copilot-for-rec/hfcbppmifjfaobchcpmoeinjdfdpgonh
+2026-02-13 17:44:13.044 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:13.977 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/linkedin-saved-jobs-extra/hodgpgefgipbimcincapmgoiejjijbkf
+2026-02-13 17:44:14.542 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:15.479 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/linkedin-to-airtable/cnbfnjnfadkcidlmddmmhkbfbngephmk
+2026-02-13 17:44:15.877 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:16.808 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/z-real-estate-scraper-for/jdidjlghecfpaedabjinjfpdlcioeklo
+2026-02-13 17:44:17.414 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:18.347 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-listings-scraper-z/gdbnkepefknkdhionjglgioohibnekmn
+2026-02-13 17:44:18.926 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:19.875 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/real-estate-data-scraper/nlieamdebnjhijflpbkbaijnjpdpieoh
+2026-02-13 17:44:20.496 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:21.427 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-scraper-agent-prop/gjhcnbnbclgoiggjlghgnnckfmbfnhbb
+2026-02-13 17:44:21.787 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:22.723 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/real-estate-scraper-tool/njfokbkbbpciopkfephmmeagdfokenko
+2026-02-13 17:44:23.371 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:24.306 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-scraper-extract-ex/hgfcbomkghjeaglfogfijgfgljehibpl
+2026-02-13 17:44:24.884 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:25.815 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-scraper/ndfgliofhogaipihfibmfpanaldoklbh
+2026-02-13 17:44:26.241 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:27.127 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-scraper-agent-prop/mbpanoogbnehgacolcfmlddmpnljpbml
+2026-02-13 17:44:27.501 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:28.418 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-scraper-lead-gener/djhnaibcpncgldkceiolopiafopnopbp
+2026-02-13 17:44:28.735 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:29.687 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/listly-web-scraping/ihljmnfgkkmoikgkdkjejbkpdpbmcgeh
+2026-02-13 17:44:30.073 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:31.007 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zillow-scraper-export-lea/hfcnkdlbllfagajomfddiaefmojfbama
+2026-02-13 17:44:31.365 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:32.312 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/upwork-copilot-ai-proposa/ogkpippnjeanpefmaahcmokejkaeipjo
+2026-02-13 17:44:32.827 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:33.754 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-upwork-auto-bid/ofojlmkgjmmdiegmbaoiaokoclpkmkgb
+2026-02-13 17:44:34.271 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:35.213 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-proposal-generator-for/conikchpaofeclhpkheikggfahgpcahc
+2026-02-13 17:44:36.070 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:37.005 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/bid-agent/dlojompjfplommagmoijaeiggemmigck
+2026-02-13 17:44:37.375 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:38.306 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/upwork-analytics/fgeaeaohhhilmhmnnhiakoejocajcnnf
+2026-02-13 17:44:38.994 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:39.923 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/upwork-goldmine-filter-wo/leclidplibnlhpncilpnfpnanfbhoaaa
+2026-02-13 17:44:40.598 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:41.523 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/upwork-bidder-ai-coming-s/abobgdedegeclcbaaeddpbjflffpkdlo
+2026-02-13 17:44:42.083 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:43.012 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/copalat-a-gpt-for-freelan/pegclbgggajipbeekkdgmpccojjcjedd
+2026-02-13 17:44:43.392 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:44.324 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/upwork-alternative/bggfhgigoocopnabibkahmoheooobmfk
+2026-02-13 17:44:44.719 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:45.649 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/amazon-product-finder-amz/njopapoodmifmcogpingplfphojnfeea
+2026-02-13 17:44:46.204 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:47.139 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sellersprite-amazon-resea/lnbmbgocenenhhhdojdielgnmeflbnfb
+2026-02-13 17:44:47.510 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:48.436 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sellerapp-supercharge-you/lofbbfcpljahnhgncgommcbkckdbjdof
+2026-02-13 17:44:49.042 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:49.979 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/helium-10-for-amazon-sell/njmehopjdpcckochcggncklnlmikcbnb
+2026-02-13 17:44:50.758 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:51.635 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/amazon-review-request-too/akaobgcedoikjgdlbecjejhdfhdmobph
+2026-02-13 17:44:52.392 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:53.337 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/jungle-scout/bckjlihkmgolmgkchbpiponapgjenaoa
+2026-02-13 17:44:54.253 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:55.187 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/seller-radar-amazon-produ/amdclkifgboiigijlnnmbgjcliakgchp
+2026-02-13 17:44:55.769 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:56.703 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/amazon-product-research-p/fdomdebhgmlgoogponlofhmecpbafoej
+2026-02-13 17:44:57.186 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:58.137 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-amazon-product-researc/cdmbeofnbhgdgnijieodggfmfpamfifg
+2026-02-13 17:44:58.662 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:44:59.596 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/azinsight-amazon-fba-prod/gefiflkplklbfkcjjcbobokclopbigfg
+2026-02-13 17:45:00.204 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:01.148 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/selleramp-sas-amazon-fba/kidmffepbniamfbibhfgdakkggchipjl
+2026-02-13 17:45:02.008 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:02.948 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ds-amazon-quick-view/jkompbllimaoekaogchhkmkdogpkhojg
+2026-02-13 17:45:03.477 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:04.406 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/online-seller-addon/cmjihoeplpkmlmbbiiognkceoechmand
+2026-02-13 17:45:04.747 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:05.676 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/databoss-amazon-analytics/benpeajocgmeimlhncgdeblffombmhfa
+2026-02-13 17:45:06.201 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:07.135 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sheets-genie/jimbejfllgpmhahdeleeojfdinlpgllk
+2026-02-13 17:45:07.468 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:08.412 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/magical-text-expander-aut/iibninhmiggehlcdolcilmhacighjamp
+2026-02-13 17:45:08.830 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:09.742 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/whatsapp-bulk-message-sen/empadgjgdchholinefgfdhcenflcicln
+2026-02-13 17:45:10.141 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:11.098 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/taskade-ai-agents-chat-bo/hcobdfnjjaceclfdjpmmpiknimccjpmf
+2026-02-13 17:45:11.670 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:12.598 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/hopted-amazon-e-commerce/hppngadaifclpeoiiigaeghmbfolemjk
+2026-02-13 17:45:13.236 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:14.165 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/finzy-linkedin-automation/ofcpdpgcagbdnainooineelmombklbhp
+2026-02-13 17:45:15.204 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:16.137 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sheet-buddy/bjkjnfmcdmpjgfbmjbdenmoclbiegmoc
+2026-02-13 17:45:16.668 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:17.603 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/nocoding-data-scraper-eas/ojaffphbffmdaicdkahnmihipclmepok
+2026-02-13 17:45:18.038 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:18.923 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-forms-auto-filler/jdjlkmjjmpdbmejkicfjokkgifdkpjek
+2026-02-13 17:45:19.539 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:20.472 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/lightning-autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk
+2026-02-13 17:45:21.475 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:22.404 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-tasks/ehbmpdmbnminplejlpbgbkijnmheffec
+2026-02-13 17:45:23.198 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:24.143 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/whats2api-integrate-whats/nifnaghkkjbnghihjkbbcibndkhnlkdc
+2026-02-13 17:45:24.516 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:25.459 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/templify-%E2%80%93-write-messages/fndgllkjbjkfnkjfcpnajbmgaedokmdo
+2026-02-13 17:45:25.819 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:26.742 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/spiderking-ai-web-scraper/phgpndedflkchdgnihgfijppnfgelefa
+2026-02-13 17:45:27.235 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:28.176 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/all-in-one-context-menu-p/fnchfnmjbfobolkkmbikelajbceddcaf
+2026-02-13 17:45:28.539 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:29.472 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/elements-extractor/paecedpobkmhmmdfahbogcgmbleciadj
+2026-02-13 17:45:29.806 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:30.755 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sheetgo-connect-filter-me/jopgcfpfajmdhngaldhlhpedjncpjmle
+2026-02-13 17:45:31.138 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:32.060 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/superjoin-ai-assistant-fo/ebjiaboijeoeckmpioggahflmlabfjom
+2026-02-13 17:45:32.445 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:33.387 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/octo-ai-data-analysis-aut/obloifdoiohdfcnimbahlphceecmjoci
+2026-02-13 17:45:33.957 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:34.888 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/harpa-ai-web-automation-w/eanggfilgoajaocelnaflolkadkeghjp
+2026-02-13 17:45:35.247 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:36.185 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/axiom-browser-automation/cpgamigjcbffkaiciiepndmonbfdimbb
+2026-02-13 17:45:36.719 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:37.649 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/browserflow-web-scraping/hfjnppljknigdnnpocjjgdcfmnodoafe
+2026-02-13 17:45:38.238 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:39.182 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/goless-browser-automation/ghlmiigebgipgagnhlanjmmniefbfihl
+2026-02-13 17:45:39.913 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:40.784 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/excel-master-ai/edfkmdmdoiacnfgdgplfcepkgihfffem
+2026-02-13 17:45:41.596 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:42.544 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-apps-script-tools/iigobcdpmngdgiacebgenbccmdacnjhp
+2026-02-13 17:45:43.078 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:44.012 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-apps-script-copilo/aakmllddlcknkbcgjabmcgggfciofbgo
+2026-02-13 17:45:44.347 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:45.283 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo
+2026-02-13 17:45:45.627 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:46.584 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/appsscript-color/ciggahcpieccaejjdpkllokejakhkome
+2026-02-13 17:45:47.045 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:47.992 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/dark-night-docs-sheets-sl/pmimaploeaigkkpcodclcfoeedegjmka
+2026-02-13 17:45:48.325 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:49.275 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/no-script-suite-lite/ahnanjpbkghcdgmlchbcfoiefnifjeni
+2026-02-13 17:45:49.618 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:50.564 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/nitrogas/najbgpipgacnhjcaabbhdaddlmebmopb
+2026-02-13 17:45:50.946 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:51.876 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/convert-xlsx-and-csv-to-g/icpanbomnggchalammgeffpeegjnmdic
+2026-02-13 17:45:52.241 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:53.162 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/pragmatic-ai-google-apps/oehfhmecefcenifckphdpppimfclnmlj
+2026-02-13 17:45:53.678 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:54.626 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/script-blocker-ultimate-n/onedokhafbakmhkblnokgjcliehfognj
+2026-02-13 17:45:54.964 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:55.911 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/excel-to-google-sheets/ommpabojdlffhckbmnegilogojdoggmp
+2026-02-13 17:45:56.243 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:57.202 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/convert-pdf-to-excel/bhaeffhiollngcgdhoepmdckmeadgnbk
+2026-02-13 17:45:57.781 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:45:58.725 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj
+2026-02-13 17:45:59.081 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:00.005 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/pdf-to-excel-converter/oaggnjdgcnhicninfnkheklcimlcmlom
+2026-02-13 17:46:00.963 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:01.885 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/data-scraper-easy-web-scr/nndknepjnldbdbepjfgmncbggmopgden
+2026-02-13 17:46:02.300 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:03.227 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/tablesherpa-web-to-sheets/gkkoclipcambffgiijcjemfnhpknlenk
+2026-02-13 17:46:03.635 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:04.527 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-excel-bot-chatgpt-exce/ehpdalbmeiockgpaikchiciodighaedg
+2026-02-13 17:46:05.137 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:06.089 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/pdf-to-excel/llkbobggnhmhacelceeomfifnjmopklm
+2026-02-13 17:46:06.684 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:07.633 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/json-to-excel-converter/afgljgmhifnlchgemjmmemebnkhghfep
+2026-02-13 17:46:07.959 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:08.919 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/add-to-sheets-save-to-goo/hgilhmbegaanegfbcppneigcmhgoinib
+2026-02-13 17:46:09.472 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:10.403 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-sheets-dark-mode/jolajcnbcjbfmlkccdppfjpbnlfgejpn
+2026-02-13 17:46:10.950 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:11.882 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/table-capture-tabular-dat/bmmhahnhjkhgephgblidkpoidfkhchnk
+2026-02-13 17:46:12.246 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:13.167 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/templates-for-google-shee/cplfhghglmhnonmiadpnkdkjacihabja
+2026-02-13 17:46:13.801 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:14.723 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/export-emails-to-sheets-b/ibpbagbedfnlepijbnjeanihpoohkocm
+2026-02-13 17:46:15.349 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:16.276 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/table-capture/iebpjdmgckacbodjpijphcplhebcmeop
+2026-02-13 17:46:16.950 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:17.880 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-sheets-dark-mode/edffmjgbjnhkgfjbfkkojaaejamclpfk
+2026-02-13 17:46:18.256 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:19.193 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/quick-spreadsheet/akcjblpfcnfknlafiedflockhcibkdcm
+2026-02-13 17:46:19.668 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:20.598 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sheetsgpt-ai-google-sheet/gniilafaobndflnfkjofaecaapicnhhg
+2026-02-13 17:46:21.219 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:22.166 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/google-sheets-tabs-on-top/lbhlhhckfpdpafckdiklcbamkmogjdjc
+2026-02-13 17:46:22.669 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:22.669 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/tubebuddy-for-youtube/mhkhmbddkmdggbhaaaodilponhnccicb
+2026-02-13 17:46:22.720 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:22.720 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/vidiq-vision-for-youtube/pachckjkecffpdphbpmfolblodfkgbhl
+2026-02-13 17:46:22.774 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:22.774 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/keywords-everywhere-keywo/hbapdpeemoojbophdfndmlgdhppljgmp
+2026-02-13 17:46:22.844 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:22.844 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ubersuggest-seo-and-keywo/nmpgaoofmjlimabncmnmnopjabbflegf
+2026-02-13 17:46:22.970 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:23.608 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/seo-checker/hfhfhmjmahcmfnpoheijkhhlicgjabmk
+2026-02-13 17:46:24.216 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:25.162 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/vidai/hphfliggkgombflhagnibkclkllpbkpk
+2026-02-13 17:46:25.528 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:26.466 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/veefly-youtube-chrome-ext/igmmoahkolhlpcfjeijbbbmecpbkllkp
+2026-02-13 17:46:36.560 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:37.492 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/show-youtube-video-tags-a/jlimlbghmhifobdaampfgllomdldpmeg
+2026-02-13 17:46:38.345 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:39.267 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/lumetrics-youtube-seo-rea/injmglapifjegojjdojaphjgodbbkdmb
+2026-02-13 17:46:39.963 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:40.921 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-youtube-seo-assistant/nlkjohhmcbdcgdkpelgkecifipaofppl
+2026-02-13 17:46:41.569 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:41.569 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/get-youtube-tags/oghechgciofkpklmdhjoeaafejnmgppa
+2026-02-13 17:46:41.626 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:42.511 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/tubenxt-for-youtube/meaieklbnkpcmaafcphibnlmpfapbjpg
+2026-02-13 17:46:43.455 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:44.386 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/tubeoptimize-pro/ngokobidghmangbbpaelkfecpjjlbkgl
+2026-02-13 17:46:44.897 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:45.832 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/keyword-planner-get-volum/nglpmnggbdgdkeplmhdjleioggagkhgc
+2026-02-13 17:46:46.398 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:47.323 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/viewgin-eye-youtube-tikto/cdnimgollfgcehacjeaahljajlgdldie
+2026-02-13 17:46:48.163 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:49.112 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/free-youtube-keywords-tag/lphciodaebdfbdpdkhngagehmdpijpnp
+2026-02-13 17:46:49.585 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:50.531 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-to-text/apnedodbofogffiagpekmbeflilkcbgf
+2026-02-13 17:46:51.042 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:51.987 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-analyzer/oefncahpjhmbhahohenajofmeleahjen
+2026-02-13 17:46:53.197 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:53.198 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/digispot-ai-seo-insights/njjbmbinhpipcdocojjniahjgdoljohg
+2026-02-13 17:46:53.245 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:54.153 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/free-ai-youtube-video-tit/holfnplikookkjkmdjodchnobhknkhmj
+2026-02-13 17:46:54.497 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:55.437 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-tagger/clobnhgmllpgmoinblefdhhajjfccmip
+2026-02-13 17:46:55.798 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:56.742 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/free-ai-tag-generator-for/oojmepkmiepcfpkkcjlhacagadhencdk
+2026-02-13 17:46:57.236 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:57.236 | DEBUG    | src.radar.utils.fetcher:fetch:27 - Cache hit: https://chromewebstore.google.com/detail/ai-search-engine-optimiza/gojpceecidcihnceohabpajddgjleaak
+2026-02-13 17:46:57.269 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:58.169 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-chapters-timeskip/pedofdgoinfflbafjdldggkjcjafpalb
+2026-02-13 17:46:58.566 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:46:59.456 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-description-gener/mgbmaphlmdndiochenldhaibaebpicih
+2026-02-13 17:46:59.789 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:00.739 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-brainrot-blocker/mlepgckpannljbjbjndnnigckogkjblk
+2026-02-13 17:47:01.205 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:02.142 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/tubeflow-optimizer/ncnjefjolnnibkcjniaglbllhgiooncd
+2026-02-13 17:47:02.615 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:03.565 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/tubespanner/bbnicfgabflhomlfeehgadmijdfiaaii
+2026-02-13 17:47:03.969 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:04.893 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/subtitles-for-youtube-by/kppjkkmennnoomefnpgnjcnagjmomgbo
+2026-02-13 17:47:05.228 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:06.170 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/rankpro/bmendnndheldajgfdnkngepjacfljdoi
+2026-02-13 17:47:06.665 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:07.602 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-tag-generator/gjobfohmhobaaghinlpdpcboojaocamp
+2026-02-13 17:47:08.093 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:09.030 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/serp-analyzer-pro-google/pnachhklfkmlcjconccoggdocfcifdbn
+2026-02-13 17:47:09.377 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:10.318 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/universal-keyword-planner/niaagjifaifoebkdkkndbhdoamicolmj
+2026-02-13 17:47:10.632 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:11.577 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-video-to-blog-con/phnjkojaibknjfdknapomgdjkehgehpk
+2026-02-13 17:47:11.933 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:12.874 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/saydub-youtube-summary-wi/knhjgdkddmnomebnjnmcbioloeojhadc
+2026-02-13 17:47:13.655 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:14.578 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/chapterfast-youtube-chapt/knjgnhdmbanlcgacjhphjmnbpjfekimb
+2026-02-13 17:47:15.097 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:16.033 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/seenyt-youtube-seo-ai-gro/ajjimohhpmkhgagldoegomjobgpkffdc
+2026-02-13 17:47:16.518 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:17.454 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/zbee-seo-analyzer-for-you/lgddmmhnmkmkfhaodogcoecdecegemgk
+2026-02-13 17:47:17.954 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:18.885 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/gmail-email-templates-by/llccdnmbipddnkhmldacpcjjcnljpoij
+2026-02-13 17:47:19.227 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:20.169 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/briskine-email-templates/lmcngpkjkplipamgflhioabnhnopeabf
+2026-02-13 17:47:20.675 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:21.596 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/save-email-template-by-se/abokklkondgpdlcajcjiobegghjfccih
+2026-02-13 17:47:21.938 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:22.866 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/shared-email-templates-si/kkajpjibkjkiminiilbodneoamodbhin
+2026-02-13 17:47:23.242 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:24.165 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/outlook-email-templates-b/llhlhokgnabmiikbjdgjblajbbbenemj
+2026-02-13 17:47:24.686 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:25.574 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/mailchimp-templates-for-g/mmjgchjpejidmgmemdpemiojmblddmfb
+2026-02-13 17:47:25.944 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:26.870 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/hubspot-templates-for-gma/bpamdngaencblehpekanhchfaejgimln
+2026-02-13 17:47:27.356 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:28.288 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/insert-and-send-html-with/bcflbfdlpegakpncdgmejelcolhmfkjh
+2026-02-13 17:47:28.652 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:29.577 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/gmail-ai-email-assistant/loclkojldkjladfhbngilnhbeffbkgdm
+2026-02-13 17:47:30.103 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:31.024 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-template-checker-wa/oelldnebggajjfacfajacfbkeekeakip
+2026-02-13 17:47:31.488 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:32.429 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/document-templates-email/hjhbekooienbklcbaoliaojklgbllelo
+2026-02-13 17:47:32.940 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:33.866 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-extractor-by-emailv/fplaepdipjjpkngejlakmcjkokghhndj
+2026-02-13 17:47:34.239 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:35.179 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-scraper/hilmcammjfaggcikhnfoapeecffdacnh
+2026-02-13 17:47:35.723 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:36.645 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/xtractmail-email-finder-e/miodilbjeadhmalkdjgihlmdemjckhok
+2026-02-13 17:47:37.044 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:37.976 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ai-email-generator/lmhhgiffhomodcmhfdaglibbmbibahjn
+2026-02-13 17:47:38.523 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:39.454 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/emailgo-email-extractor/pjbgfbjneobeegfkbamnflnbknkfmbba
+2026-02-13 17:47:39.940 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:40.876 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/youtube-email-finder/njgpamepkljollkepnbfcmhfniaflijh
+2026-02-13 17:47:41.365 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:42.307 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/leadiq-contact-data-in-on/befngoippmpmobkkpkdoblkmofpjihnk
+2026-02-13 17:47:42.650 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:43.579 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/blocknotes/ebgmaljihmfbplmknjehheecopadefea
+2026-02-13 17:47:44.136 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:45.061 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/send-mass-mail-+-html-ins/obngoldljmnnpggbekneikaohbeflbee
+2026-02-13 17:47:45.414 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:46.358 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ghostwrite-chatgpt-email/fbjnnjochaopepfjpngghafgnafebkjh
+2026-02-13 17:47:46.685 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:47.619 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/rightinbox-email-reminder/mflnemhkomgploogccdmcloekbloobgb
+2026-02-13 17:47:48.134 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:49.024 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-writing-ai/jafhgiihbfojnaenimepogbbijojmcgk
+2026-02-13 17:47:49.620 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:50.544 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/kooni-ai-instantly-polish/albhobeoepneiobdgabalgkflnaknkja
+2026-02-13 17:47:51.009 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:51.953 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/seprex-ai-email-assistant/dbmjdakkdaodljnnepmpmjmfhondnnja
+2026-02-13 17:47:52.421 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:53.372 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/snoooz-ai-email-writer/ijdkhkfhndcohdmpogkjenlmjpeophlg
+2026-02-13 17:47:53.868 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:54.795 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/official-ai-email-writer/pjbjfemelemehcajkcjihfagbmjicaii
+2026-02-13 17:47:55.246 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:56.191 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/chatgpt-for-gmail-by-clou/fcblgiphlneejkokhnaagmjombnfdnog
+2026-02-13 17:47:56.713 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:57.634 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-draft-accelerator/gekhjogflifbelhfnhgogmmgdomhbfaj
+2026-02-13 17:47:58.154 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:47:59.089 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/findy-email-search-and-ou/amcdijdgmckgkkahhcobikllddfbfidi
+2026-02-13 17:47:59.429 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:00.360 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-search-and-outreach/kljfdjngbjfhkfbmcjamofaipcmkbdmb
+2026-02-13 17:48:00.704 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:01.644 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/klenty-email-outreach-tra/dcobodbibhecmhnamioljhlnaeoimbcd
+2026-02-13 17:48:02.136 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:03.071 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/linkedin-email-finder-int/nbmmhcmajjdfjobnmgnkbdhfpnbhpkef
+2026-02-13 17:48:03.595 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:04.537 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf
+2026-02-13 17:48:05.006 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:05.939 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/github-email-outreach-ass/akhgdlofbofpfljgkjnecaebaephkmif
+2026-02-13 17:48:06.489 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:07.424 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/sendr-hyper-personalized/canglcahejooelklghilekmaahpbmlpk
+2026-02-13 17:48:07.910 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:08.836 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/free-sourcing-tools/cecfglplkbiojemjbklimdhcmdhffanj
+2026-02-13 17:48:09.341 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:10.273 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/email-finder-kendo-sourci/kecadfolelkekbfmmfoifpfalfedeljo
+2026-02-13 17:48:10.785 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:11.718 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/pcr-capture/dfgdlkjpipgemdjaggbaponjifbnekhj
+2026-02-13 17:48:12.110 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:12.992 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/talentquery-boolean-searc/ldeejhjgppijilcmhflmnfhcbledpibm
+2026-02-13 17:48:13.503 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:14.434 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/domino-tabs-social-profil/domodgijdpcgohgmjghancdkhionelmm
+2026-02-13 17:48:15.042 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:15.966 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/docgptai-linkedin-automat/pgkcgodejfmhedclkalhoogidgiokhge
+2026-02-13 17:48:16.415 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:17.347 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/connect-linkedin-jobs-wit/nodgehkojgdaecibodnchekogjhfhlbl
+2026-02-13 17:48:17.822 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:18.771 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/rival/nogdppkjhdnlpkbbdbgpmekmbfpkkogb
+2026-02-13 17:48:19.205 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:20.152 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/clinch-sourcing-companion/jnhiobijbfkpiciacdfodolmkggdbegi
+2026-02-13 17:48:20.495 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:21.424 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/job-description/lflebomkebbacnippaaoofjbkhajiloe
+2026-02-13 17:48:21.924 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:22.845 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/profile-enhancer-pro/ahjbffbpifndaagokhldcaalpegbhpkd
+2026-02-13 17:48:23.357 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:24.311 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/talenai/bkbkldeidmhgccmmoenfmledeicehknd
+2026-02-13 17:48:24.800 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:25.735 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/ultimatesourcer-byss/eadohlgmphfcfjikjibhoalkmcomgigd
+2026-02-13 17:48:26.540 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:27.490 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/hiroo/pnelhidginfmcljddkhflacemmcebpmk
+2026-02-13 17:48:28.216 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:29.134 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/iris/lmemhohjmchkklapmmnleokfnflllhpo
+2026-02-13 17:48:29.483 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:30.409 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/flinkk-hire-linkedin/pfbnjfnahbilmheeccnpjfhhjcnakbje
+2026-02-13 17:48:30.922 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:31.846 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/recruit-crm-sourcing-exte/pabamgafdnanldcgdhpfohfdpjjbekom
+2026-02-13 17:48:32.255 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:33.177 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/peakai-free-instant-b2b-p/jndeeioopbcflpclpfnflmekcddknoph
+2026-02-13 17:48:33.555 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:34.481 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/cats-extension/elhkfmcodhgaoodhemkeempcihlcbpia
+2026-02-13 17:48:34.962 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:35.888 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/profilespider-ai-profile/kflfkaepmkjnimnegemkpckkhplodhaf
+2026-02-13 17:48:36.323 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:37.193 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/copygoat-text-templates-s/hnnlhgcljcbgkebncpijgeaokpkohhph
+2026-02-13 17:48:37.751 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:38.663 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/recruiterflow/gdlphfgigkboncdlkjcamelidhkcgpie
+2026-02-13 17:48:39.146 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:40.084 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/nixz-plugin-ai-recruiting/aielpkmgjjaddochapclgdhakecjloih
+2026-02-13 17:48:40.518 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:41.436 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/upnest-sourcing/colmnmimcjhdkgmjmoacagpmpfbkhofg
+2026-02-13 17:48:41.848 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:42.772 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/skimit-linkedin-recruiter/ipaajbgmiinahmfbmmjpikmfjkccpocj
+2026-02-13 17:48:43.303 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:44.232 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/join-talent-sourcing/ejhbogofejeijcndmcehmaagmpijieic
+2026-02-13 17:48:44.719 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:45.643 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/digital-recruiter/ihcnepmojmgcchnmeiikkofdfocekhnb
+2026-02-13 17:48:46.192 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:47.150 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/dotlinker-talent-sourcing/ahkanmhadkofolbaokeahjampgkfdami
+2026-02-13 17:48:47.545 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:48.481 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/dover-sourcing-extension/knjnhpcmdnakigmnekianbpmhdfkejom
+2026-02-13 17:48:48.993 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:49.913 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/juicebox-ai-powered-sourc/iejdbgkemppncmaimjcgelcpmlkogmmf
+2026-02-13 17:48:50.363 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:51.312 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/hireright-linkedin-ai-rec/kehgpkpcnciipkmemljdgippdolecnee
+2026-02-13 17:48:51.803 | INFO     | __main__:extract:77 - Extracting signals for: Unknown
+2026-02-13 17:48:52.743 | INFO     | src.radar.utils.fetcher:fetch:39 - Fetching: https://chromewebstore.google.com/detail/seekout-sourcing-assistan/fpeamfhkkhdjdikhbalglpemmhcaikmf
+2026-02-13 17:48:53.263 | INFO     | __main__:extract:135 - Extraction complete.
+2026-02-13 17:48:56.319 | INFO     | __main__:score:164 - Scoring complete.
+2026-02-13 17:48:57.474 | INFO     | src.radar.reporting.generator:generate:98 - CSV report saved to reports/report.csv
+2026-02-13 17:48:57.478 | INFO     | src.radar.reporting.generator:generate:103 - JSON report saved to reports/report.json
+2026-02-13 17:48:57.491 | INFO     | src.radar.reporting.generator:generate:120 - HTML report saved to reports/report.html
+2026-02-13 17:48:57.492 | INFO     | __main__:report:214 - Reporting complete.

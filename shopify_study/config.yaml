@@ -1,0 +1,64 @@
+# Shopify Study Configuration
+
+crawler:
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  rate_limit_seconds: 1.0
+  timeout_seconds: 15
+  cache_dir: ".html_cache"
+
+analysis:
+  min_products_for_dtc: 15
+  high_hero_dominance_threshold: 1.5
+
+urls:
+  - "https://kyliecosmetics.com"
+  - "https://www.gymshark.com"
+  - "https://shop.allbirds.com"
+  - "https://bombas.com"
+  - "https://www.fashionnova.com"
+  - "https://www.redbullshop.com"
+  - "https://www.teslarati.com"
+  - "https://www.skims.com"
+  - "https://www.colourpop.com"
+  - "https://www.allbirds.com"
+  - "https://www.pipsnacks.com"
+  - "https://www.chubbiesshorts.com"
+  - "https://www.mvmt.com"
+  - "https://www.untuckit.com"
+  - "https://www.ruggable.com"
+  - "https://www.thirdlove.com"
+  - "https://www.brooklinen.com"
+  - "https://www.burrow.com"
+  - "https://www.casper.com"
+  - "https://www.awaytravel.com"
+  - "https://www.warbyparker.com"
+  - "https://www.glossier.com"
+  - "https://www.huel.com"
+  - "https://www.drinkhaus.com"
+  - "https://www.magicspoon.com"
+  - "https://www.ugmonk.com"
+  - "https://www.popchart.co"
+  - "https://www.bestself.co"
+  - "https://www.getquip.com"
+  - "https://www.ritual.com"
+  - "https://www.hims.com"
+  - "https://www.hers.com"
+  - "https://www.keeps.com"
+  - "https://www.calm.com"
+  - "https://www.headspace.com"
+  - "https://www.noom.com"
+  - "https://www.peloton.com"
+  - "https://www.tonal.com"
+  - "https://www.mirror.co"
+  - "https://www.whoop.com"
+  - "https://www.oura.com"
+  - "https://www.eightsleep.com"
+  - "https://www.moleculesleep.com"
+  - "https://www.tempurpedic.com"
+  - "https://www.purple.com"
+  - "https://www.leesa.com"
+  - "https://www.tuftandneedle.com"
+  - "https://www.nectarsleep.com"
+  - "https://www.dreamcloudsleep.com"
+  - "https://www.awarasleep.com"
+# Add more URLs up to 50 for the real study
