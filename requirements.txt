@@ -1,0 +1,11 @@
+typer[all]
+sqlalchemy
+pyyaml
+loguru
+requests
+beautifulsoup4
+lxml
+pytest
+httpx
+jinja2
+pandas
