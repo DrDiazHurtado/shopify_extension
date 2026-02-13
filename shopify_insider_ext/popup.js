@@ -1,5 +1,6 @@
 let isPro = false;
 let allProducts = [];
+const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/14A9AN3k26oKg622mwdnW00";
 
 const log = (msg) => {
   console.log(`[ShopifyInsider] ${msg}`);
@@ -16,15 +17,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const upgradeBtn = document.getElementById('upgrade-btn');
   const errorMsgText = errorCard ? errorCard.querySelector('p') : null;
 
-  log("Popup initialized");
-
-  // Check state
-  chrome.storage.local.get(['isPro'], (result) => {
+  // 1. Cargar estado de Licencia
+  chrome.storage.local.get(['isPro', 'licenseKey'], (result) => {
     isPro = result.isPro || false;
-    log(`Pro status: ${isPro}`);
     if (isPro) {
+      log("Premium License Active");
       proBadge?.classList.remove('hidden');
       upgradeBtn?.classList.add('hidden');
+      if(document.getElementById('license-section')) {
+          document.getElementById('license-section').style.display = 'none';
+      }
     }
   });
 
@@ -39,49 +41,47 @@ document.addEventListener('DOMContentLoaded', async () => {
   const productsUrl = `${url.origin}/products.json?limit=250`;
 
   try {
-    if (statusText) statusText.innerText = "Scanning for products...";
+    if (statusText) statusText.innerText = "Scanning Competitor Data...";
     
     const response = await fetch(productsUrl);
-    log(`Fetch status: ${response.status}`);
     
     if (response.ok) {
       const data = await response.json();
       if (data.products && data.products.length > 0) {
         allProducts = data.products;
-        log(`Found ${allProducts.length} products`);
-        
         statusArea?.classList.add('hidden');
         infoCard?.classList.remove('hidden');
         
-        const displayCount = isPro ? allProducts.length : Math.min(allProducts.length, 50);
+        // Lógica de Gated Content (15 productos)
+        const displayCount = isPro ? allProducts.length : Math.min(allProducts.length, 15);
         if (productCount) productCount.innerText = displayCount;
 
-        if (!isPro && allProducts.length > 50) {
+        if (!isPro && allProducts.length > 15) {
           const limitMsgId = 'limit-msg';
           if (!document.getElementById(limitMsgId)) {
             const limitMsg = document.createElement('p');
             limitMsg.id = limitMsgId;
-            limitMsg.style.cssText = 'font-size: 10px; color: #ff4081; margin: 10px 0; font-weight: bold;';
-            limitMsg.innerText = `PREMIUM REVELATION: +${allProducts.length - 50} more items hidden.`;
+            limitMsg.className = "premium-alert";
+            limitMsg.style.cssText = 'font-size: 11px; color: #f43f5e; margin: 10px 0; font-weight: 800; text-align: center; border: 1px dashed #f43f5e; padding: 5px; border-radius: 4px;';
+            limitMsg.innerText = `PRO VERSION REQUIRED: ${allProducts.length - 15} more products hidden.`;
             infoCard?.insertBefore(limitMsg, exportBtn);
           }
         }
 
         if (exportBtn) {
           exportBtn.onclick = () => {
-            const productsToExport = isPro ? allProducts : allProducts.slice(0, 50);
+            const productsToExport = isPro ? allProducts : allProducts.slice(0, 15);
             downloadCSV(productsToExport, url.hostname);
           };
         }
 
         if (upgradeBtn) {
           upgradeBtn.onclick = () => {
-            log("Redirecting to Stripe...");
-            const checkoutUrl = "https://buy.stripe.com/14A9AN3k26oKg622mwdnW00";
-            chrome.tabs.create({ url: checkoutUrl });
+            chrome.tabs.create({ url: STRIPE_CHECKOUT_URL });
           };
         }
 
+        // Sistema de Activación "Adulto"
         const activateLink = document.getElementById('activate-link');
         const licenseInput = document.getElementById('license-key');
 
@@ -93,33 +93,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             licenseInput.focus();
           };
 
-          licenseInput.onkeypress = (e) => {
+          licenseInput.onkeypress = async (e) => {
             if (e.key === 'Enter') {
-              const key = licenseInput.value.trim();
-              if (key.length > 5) { 
-                log("Activating License...");
+              const key = licenseInput.value.trim().toUpperCase();
+              
+              // Simulación de validación profesional
+              // En el futuro esto hará un: fetch('tuservidor.com/verify?key=' + key)
+              if (key.startsWith("INSIDER-") && key.length > 12) { 
+                log("Verifying License Key...");
                 chrome.storage.local.set({ isPro: true, licenseKey: key }, () => {
-                  alert("Success! Premium Features Unlocked.");
+                  alert("INSIDER PRO ACTIVATED SUCCESSFULY!");
                   window.location.reload();
                 });
               } else {
-                alert("Invalid License Key.");
+                alert("Invalid License Key format. Please use the key sent to your email.");
               }
             }
           };
         }
       } else {
-        throw new Error("No products found in this store.");
+        throw new Error("No items found. Ensure this is a Shopify store.");
       }
     } else {
-      if (response.status === 404) {
-        throw new Error("This doesn't seem to be a Shopify store.");
-      } else {
-        throw new Error(`Store responded with status ${response.status}`);
-      }
+      throw new Error("Could not access store data. Try refreshing the page.");
     }
   } catch (err) {
-    log(`Error: ${err.message}`);
     statusArea?.classList.add('hidden');
     errorCard?.classList.remove('hidden');
     if (errorMsgText) errorMsgText.innerText = err.message;
@@ -127,7 +125,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function downloadCSV(products, hostname) {
-  const headers = ["Title", "Handle", "Created At", "Vendor", "Product Type", "Price", "Compare At Price", "Image URL", "Rank"];
+  const headers = ["Title", "Handle", "Created At", "Vendor", "Product Type", "Price", "Compare At Price", "Image URL", "Best Seller Rank"];
   const rows = products.map((p, index) => {
     const variant = (p.variants && p.variants[0]) || {};
     const image = (p.images && p.images[0]) || {};
