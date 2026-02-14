@@ -1,0 +1,88 @@
+:root {
+  --primary: #6366f1;
+  --secondary: #4f46e5;
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f8fafc;
+  --accent: #10b981;
+}
+
+body {
+  width: 320px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  padding: 16px;
+}
+
+.container { display: flex; flex-direction: column; gap: 16px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { display: flex; align-items: center; gap: 8px; }
+.logo h1 { font-size: 18px; margin: 0; }
+.badge { background: var(--accent); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+
+.card {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.rank-bar-container {
+  height: 8px;
+  background: #334155;
+  border-radius: 4px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.rank-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transition: width 1s ease-out;
+}
+
+.stat { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.label { color: #94a3b8; font-size: 12px; }
+.value { font-weight: bold; font-size: 12px; }
+
+.primary-btn, .secondary-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s;
+}
+
+.primary-btn { background: var(--primary); color: white; }
+.secondary-btn { background: transparent; color: var(--accent); border: 2px solid var(--accent); margin-top: 8px; }
+
+.upsell { background: rgba(16, 185, 129, 0.1); border-color: var(--accent); text-align: center; }
+.upsell p { font-size: 12px; margin-bottom: 12px; }
+
+.hidden { display: none; }
+
+footer { font-size: 11px; text-align: center; margin-top: 10px; }
+footer a { color: #94a3b8; text-decoration: none; }
+
+#status-area { text-align: center; padding: 20px 0; }
+.loader {
+  border: 3px solid #334155;
+  border-top: 3px solid var(--primary);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
