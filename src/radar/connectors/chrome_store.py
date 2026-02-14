@@ -27,31 +27,57 @@ class ChromeStoreConnector:
         # This is a heuristic based on the current structure of the Chrome Web Store
         # We look for result items.
         # Note: The structure might change often.
-        items = soup.find_all("a", href=re.compile(r"/detail/"))
+        # H2-centric approach (More robust for modern Grid Layouts)
+        # We assume the visual Title is an H2 (as confirmed by markdown conversions)
+        h2s = soup.find_all("h2")
         
-        for item in items[:limit]:
-            try:
-                name_elem = item.find("h2") or item.find("div", string=True)
-                name = name_elem.get_text(strip=True) if name_elem else "Unknown"
-                href = item['href']
-                if not href.startswith("http"):
-                    href = urljoin(self.base_url, href)
+        candidates_list = []
+        seen_urls = set()
+
+        for h2 in h2s:
+            if len(candidates_list) >= limit:
+                break
+
+            name = h2.get_text(strip=True)
+            if not name: continue
+
+            # Find the link associated with this H2
+            # Case 1: H2 is inside <a>
+            link = h2.find_parent("a", href=re.compile(r"/detail/"))
+            
+            # Case 2: H2 is next to <a> or in same container
+            if not link:
+                # Walk up tree to find a container that has the link
+                # Try 3 levels up
+                parent = h2.parent
+                for _ in range(3):
+                    if not parent: break
+                    link = parent.find("a", href=re.compile(r"/detail/"))
+                    if link: break
+                    parent = parent.parent
+            
+            if not link:
+                continue
+
+            href = link.get('href', '')
+            # Clean URL
+            if '?' in href:
+                href = href.split('?')[0]
                 
-                # Check if it's already in our list
-                if any(c['url'] == href for c in candidates):
-                    continue
+            full_url = urljoin("https://chromewebstore.google.com", href)
+            
+            if full_url in seen_urls:
+                continue
 
-                candidates.append({
-                    "name": name,
-                    "url": href,
-                    "source": "chrome_store",
-                    "keyword": keyword
-                })
-            except Exception as e:
-                logger.error(f"Error parsing chrome store item: {e}")
-
-        logger.info(f"Found {len(candidates)} candidates in Chrome Store for '{keyword}'")
-        return candidates
+            seen_urls.add(full_url)
+            candidates_list.append({
+                "name": name,
+                "url": full_url,
+                "source": "chrome_store",
+                "keyword": keyword
+            })
+            
+        return candidates_list
 
     def get_details(self, url: str) -> Dict:
         content = self.fetcher.fetch(url)

@@ -21,6 +21,8 @@ def init():
     init_db()
     logger.success("Database initialized at shopify_study/database.db")
 
+import json
+
 @app.command()
 def scan(urls: list[str] = None):
     """Scan Shopify stores from config or list."""
@@ -33,12 +35,16 @@ def scan(urls: list[str] = None):
         # Check if already processed
         existing = session.query(Store).filter(Store.url == url).first()
         if existing:
-            logger.info(f"Skipping {url}, already in database.")
-            continue
+            logger.info(f"Updating existing store: {url}")
+            # Delete old metrics and products to refresh data
+            session.query(Metric).filter(Metric.store_id == existing.id).delete()
+            session.query(Product).filter(Product.store_id == existing.id).delete()
+            session.delete(existing)
+            session.commit()
 
         logger.info(f"Processing {url}...")
         
-        # 1. Fetch Landing Page for Urgency/Bundles
+        # 1. Fetch Landing Page
         html = fetcher.fetch(url)
         if not html: continue
         
@@ -77,6 +83,12 @@ def scan(urls: list[str] = None):
         urgency = parser.detect_urgency()
         bundle = parser.detect_bundles()
         
+        # New Extractions
+        currency = parser.get_currency()
+        theme = parser.get_theme_name()
+        social = parser.get_social_links()
+        pixels = parser.detect_pixels()
+        
         calc_metrics = MetricsCalculator.calculate_store_metrics(
             products_data, hero, urgency, bundle
         )
@@ -92,7 +104,11 @@ def scan(urls: list[str] = None):
                 total_products=calc_metrics['total_products'],
                 avg_price=calc_metrics['avg_price'],
                 inventory_recency_days=calc_metrics['inventory_recency_days'],
-                vendor_count=calc_metrics['vendor_count']
+                vendor_count=calc_metrics['vendor_count'],
+                currency=currency,
+                theme=theme,
+                social_links=json.dumps(social),
+                pixels=json.dumps(pixels)
             ))
             session.commit()
             logger.success(f"Stored metrics for {domain}")

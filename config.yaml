@@ -4,16 +4,14 @@ database:
   url: "sqlite:///radar.db"
 
 seeds:
-  - "google docs ai writer"
-  - "linkedin recruiter chrome extension"
-  - "real estate scraper chrome"
-  - "upwork automated bid"
-  - "twitter ghostwriter extension"
-  - "amazon seller analytics extension"
-  - "google sheets automation tool"
-  - "youtube seo chrome extension"
-  - "email outreach chrome extension"
-  - "recruiter sourcing tool"
+  - "finance chrome extension"
+  - "banking tools chrome"
+  - "revolut automation"
+  - "crypto portfolio tracker"
+  - "stock market analysis"
+  - "budgeting chrome extension"
+  - "invoice generator extension"
+  - "fintech dashboard"
 
 crawler:
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"

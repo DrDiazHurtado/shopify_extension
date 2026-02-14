@@ -9,6 +9,10 @@ def run_shopify_scan():
     try:
         # Ejecuta el escáner masivo de tiendas (150 tiendas aleatorias del CSV)
         subprocess.run([sys.executable, "-m", "shopify_study.massive_scanner"], check=True)
+        
+        # Archivar Snapshot Histórico (Nuevo paso V2)
+        subprocess.run([sys.executable, "archive_snapshot.py"], check=True)
+
         # Sincroniza local -> nube (Supabase)
         subprocess.run([sys.executable, "intelligence_engine/scripts/sync_local_to_cloud.py"], check=True)
         logger.success("SHOPIFY pulse complete.")
@@ -57,23 +61,13 @@ if __name__ == "__main__":
     
     import sqlite3
     import requests
-    import threading
 
     while True:
         # 0. Verificar Estado de Sincronización
         check_db_status()
 
-        # Usar hilos para que un proceso lento (Shopify) no bloquee al otro (SaaS Radar)
-        t1 = threading.Thread(target=run_shopify_scan)
-        t2 = threading.Thread(target=run_saas_radar_crawl)
-
-        logger.info("🚀 Launching parallel expansion tasks...")
-        t1.start()
-        t2.start()
-
-        # Esperar a que ambos terminen
-        t1.join()
-        t2.join()
+        # 1. Expandir Base de Datos de Shopify (EXCLUSIVAMENTE)
+        run_shopify_scan()
         
-        logger.success("✅ All expansion tasks finished. Waiting 1 hour for next wave...")
-        time.sleep(3600)  # Ciclo cada hora para expansión continua
+        logger.success("✅ Shopify expansion batch finished. Waiting 10 minutes for next wave...")
+        time.sleep(600)  # Ciclo cada 10 minutos (más agresivo ahora que solo hacemos esto)
