@@ -1,0 +1,7 @@
+SAAS_v2_project.zip
+pulse.log
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
