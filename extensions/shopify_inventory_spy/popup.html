@@ -31,28 +31,30 @@
 
     <div id="info-card" class="card hidden">
       <div class="stat">
-        <span class="label">Total Products:</span>
-        <span id="product-count" class="value">-</span>
-      </div>
-      <div class="stat">
-        <span class="label">Winning Potential:</span>
+        <span class="label">Niche Authority:</span>
         <span id="win-score" class="value">Calculating...</span>
       </div>
+      <div class="stat">
+        <span class="label">Catalog Health:</span>
+        <span id="product-count" class="value">-</span> products
+      </div>
 
-      <button id="export-btn" class="primary-btn">
-        <span>💾</span> Export Inventory CSV
-      </button>
+      <div id="pro-report-area" style="margin-top: 15px;">
+        <button id="export-btn" class="primary-btn" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); width: 100%;">
+          <span>📊</span> Download Strategic PDF Report
+        </button>
+      </div>
+
+      <div id="free-upsell-area" style="margin-top: 15px;">
+        <button id="upgrade-btn" class="secondary-btn" style="background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); color: white; border: none; width: 100%; padding: 12px; font-weight: bold; border-radius: 8px; cursor: pointer;">
+          🚀 Unlock Strategic Intel (3€)
+        </button>
+      </div>
     </div>
 
-    <!-- Upsell Section -->
-    <div id="upsell-card" class="card upsell">
-        <p>Want to see the top 5 competitors beating this store?</p>
-        <button id="upgrade-btn" class="secondary-btn">Unlock Full Report (10€)</button>
-    </div>
-
-    <footer id="license-section">
-      <a href="#" id="activate-link">Already have a key?</a>
-      <input type="text" id="license-key" placeholder="Enter License Key" class="hidden">
+    <footer id="license-section" style="margin-top: 25px; border-top: 1px solid #334155; padding-top: 15px;">
+      <a href="#" id="activate-link" style="color: #94a3b8; font-size: 12px; text-decoration: none;">Already have a license?</a>
+      <input type="text" id="license-key" placeholder="Enter License Key" class="hidden" style="width: 100%; margin-top: 10px; background: #0f172a; border: 1px solid #334155; color: white; padding: 8px; border-radius: 4px;">
     </footer>
   </div>
   <script src="popup.js"></script>

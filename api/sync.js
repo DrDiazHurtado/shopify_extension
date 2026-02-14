@@ -47,16 +47,35 @@ export default async function handler(req, res) {
       })
     });
 
-    // 3. Get Ranking (Simple mock based on hero_score)
-    // In a real app, you'd query the 'competitive_ranking' view
-    const rankResponse = await fetch(`${SUPABASE_URL}/rest/v1/competitive_ranking?domain=eq.${domain}`, {
+    // 3. Get Ranking and Ecosystem (Winner Radar)
+    const rankResponse = await fetch(`${SUPABASE_URL}/rest/v1/stores?domain=neq.${domain}&order=hero_score.desc&limit=5`, {
         headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
     });
-    const rankData = await rankResponse.json();
+    const competitors = await rankResponse.json();
+
+    // 4. Get Current Store Rank Percentile
+    const allStoresCountRes = await fetch(`${SUPABASE_URL}/rest/v1/stores?select=count`, {
+        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}`, 'Prefer': 'count=exact' }
+    });
+    const totalStores = parseInt(allStoresCountRes.headers.get('content-range')?.split('/')[1] || "1");
+    
+    // Simplified rank calculation for the demo
+    const rankData = await fetch(`${SUPABASE_URL}/rest/v1/stores?domain=eq.${domain}`, {
+        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+    });
+    const currentStore = await rankData.json();
 
     return res.status(200).json({ 
       success: true, 
-      ranking: rankData[0] || { rank_percentile: 0.5, category: 'General' } 
+      ranking: {
+          rank_percentile: currentStore[0]?.hero_score > 0.8 ? 0.05 : 0.5,
+          category: 'E-commerce Standard'
+      },
+      ecosystem: competitors.map(c => ({
+          domain: c.domain,
+          score: c.hero_score,
+          strength: c.hero_score > 1.5 ? 'Elite' : 'High Performance'
+      })) 
     });
 
   } catch (error) {
