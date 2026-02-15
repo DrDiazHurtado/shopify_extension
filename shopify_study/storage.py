@@ -38,6 +38,10 @@ class Metric(Base):
     avg_price = Column(Float)
     inventory_recency_days = Column(Integer) # New: Days since last launch
     vendor_count = Column(Integer) # New: To see Brand vs Reseller
+    currency = Column(String) # NEW: Store currency
+    theme = Column(String) # NEW: Detected theme name
+    social_links = Column(Text) # NEW: JSON of social profiles
+    pixels = Column(Text) # NEW: JSON of tracking pixels
 
 class RawHTML(Base):
     __tablename__ = 'raw_html'

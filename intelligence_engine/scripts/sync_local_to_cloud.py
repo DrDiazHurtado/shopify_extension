@@ -9,13 +9,16 @@ import pandas as pd
 SUPABASE_URL = "https://cbffcvgecksspyhnqpqd.supabase.co"
 SUPABASE_KEY = "sb_publishable_jwciMUPWBhpORNq5Ffk2Vw_WsNC3iId" 
 
+import json
+
 def sync_massive_intelligence():
     local_db = "/home/noorm/Escritorio/SAAS_v2/shopify_study/database.db"
     conn = sqlite3.connect(local_db)
     
     # 1. Cargamos tiendas y sus métricas
     query_stores = """
-    SELECT s.id as local_id, s.domain, m.avg_price, m.hero_score, m.total_products, m.vendor_count, m.discount_ratio
+    SELECT s.id as local_id, s.domain, m.avg_price, m.hero_score, m.total_products, m.vendor_count, m.discount_ratio,
+           m.currency, m.theme, m.social_links, m.pixels
     FROM stores s
     JOIN metrics m ON s.id = m.store_id
     """
@@ -42,6 +45,14 @@ def sync_massive_intelligence():
         
         market_percentile = row['hero_score'] / 2.0 # Mock percentile logic simplified
 
+        # Parse extra JSONs
+        try:
+            social = json.loads(row['social_links']) if row['social_links'] else {}
+            pixels = json.loads(row['pixels']) if row['pixels'] else []
+        except:
+            social = {}
+            pixels = []
+
         payload = {
             "domain": row['domain'],
             "avg_price": float(row['avg_price']),
@@ -50,7 +61,13 @@ def sync_massive_intelligence():
             "discount_ratio": float(row['discount_ratio'] if not pd.isna(row['discount_ratio']) else 0),
             "category": "E-commerce Elite" if market_percentile > 0.8 else "Niche Player",
             "last_scanned": "2026-02-14",
-            "payload": {"top_products": products} # Usamos la columna JSONB payload que ya existe en stores
+            "payload": {
+                "top_products": products,
+                "currency": row['currency'],
+                "theme": row['theme'],
+                "social": social,
+                "pixels": pixels
+            } 
         }
 
         try:
