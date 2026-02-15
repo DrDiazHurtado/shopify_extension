@@ -38,14 +38,41 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   const url = new URL(tab.url);
-  const productsUrl = `${url.origin}/products.json?limit=250`;
+  const hostnameParts = url.hostname.split('.');
+  
+  // List of potential discovery URLs
+  const candidateUrls = [
+    `${url.protocol}//${url.hostname}/products.json?limit=250`
+  ];
+
+  // If it's a subdomain (e.g., eu.huel.com), also try the apex (huel.com)
+  if (hostnameParts.length > 2) {
+    const apex = hostnameParts.slice(-2).join('.');
+    candidateUrls.push(`${url.protocol}//${apex}/products.json?limit=250`);
+    candidateUrls.push(`${url.protocol}//www.${apex}/products.json?limit=250`);
+  }
 
   try {
     if (statusText) statusText.innerText = "Scanning Competitor Data...";
     
-    const response = await fetch(productsUrl);
-    
-    if (response.ok) {
+    let response;
+    let successUrl = "";
+
+    for (const fetchUrl of candidateUrls) {
+      log(`Trying discovery URL: ${fetchUrl}`);
+      try {
+        const res = await fetch(fetchUrl);
+        if (res.ok) {
+          response = res;
+          successUrl = fetchUrl;
+          break;
+        }
+      } catch (e) {
+        log(`Failed fetching ${fetchUrl}: ${e.message}`);
+      }
+    }
+
+    if (response && response.ok) {
       const data = await response.json();
       if (data.products && data.products.length > 0) {
         allProducts = data.products;
@@ -97,16 +124,24 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (e.key === 'Enter') {
               const key = licenseInput.value.trim().toUpperCase();
               
-              // Simulación de validación profesional
-              // En el futuro esto hará un: fetch('tuservidor.com/verify?key=' + key)
-              if (key.startsWith("INSIDER-") && key.length > 12) { 
-                log("Verifying License Key...");
-                chrome.storage.local.set({ isPro: true, licenseKey: key }, () => {
-                  alert("INSIDER PRO ACTIVATED SUCCESSFULY!");
-                  window.location.reload();
-                });
-              } else {
-                alert("Invalid License Key format. Please use the key sent to your email.");
+              log("Verifying License Key...");
+              try {
+                // LLAMADA REAL A TU API EN VERCEL
+                const response = await fetch(`https://shopify-extension-pro-3ap.vercel.app/api/verify-license?key=${key}`);
+                const result = await response.json();
+
+                if (result.valid) {
+                  log("License Verified!");
+                  chrome.storage.local.set({ isPro: true, licenseKey: key }, () => {
+                    alert("INSIDER PRO ACTIVATED SUCCESSFULLY!");
+                    window.location.reload();
+                  });
+                } else {
+                  alert("Invalid or inactive License Key. Please check your email.");
+                }
+              } catch (err) {
+                log("Error verifying license: " + err.message);
+                alert("Connection error. Please try again later.");
               }
             }
           };
